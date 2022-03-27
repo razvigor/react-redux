@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import reducer from './store/reducer';
+import { createStore, combineReducers } from 'redux';
+import balanceReducer from './store/balanceReducer';
 import { Provider } from 'react-redux';
+import loanReducer from './loanReucer';
 
-const store = createStore(reducer);
+const store = createStore(
+	combineReducers({
+		balanceReducer,
+		loanReducer,
+	})
+);
 
 ReactDOM.render(
 	<React.StrictMode>
