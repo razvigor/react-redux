@@ -13,17 +13,17 @@ function App() {
 					<ul className='ul-styles'>
 						<li className='li-styles'>
 							<NavLink className='App-link' to='/'>
-								Home Page
+								Home
 							</NavLink>
 						</li>
 						<li className='li-styles'>
 							<NavLink className='App-link' to='/balance'>
-								Balance Page
+								Balance
 							</NavLink>
 						</li>
 						<li className='li-styles'>
 							<NavLink className='App-link' to='/withdraw'>
-								Withdraw Page
+								Withdraw
 							</NavLink>
 						</li>
 					</ul>
