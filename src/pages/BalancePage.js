@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import './button.scss';
 
 function BalancePage() {
 	const balance = useSelector((state) => state.balance);

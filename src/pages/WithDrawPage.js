@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import './button.scss';
 
 function WithDrawPage() {
 	const balance = useSelector((state) => state.balance);
@@ -9,7 +10,7 @@ function WithDrawPage() {
 	}
 	return (
 		<div>
-			<h1>Witdraw page</h1>
+			<h1>Withdraw page</h1>
 			<h2>Balance: {balance}</h2>
 			<button onClick={onDepositHandle}>Withdraw</button>
 		</div>
