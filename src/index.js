@@ -3,16 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import balanceReducer from './store/balanceReducer';
 import { Provider } from 'react-redux';
 import loanReducer from './loanReucer';
+import thunk from 'redux-thunk';
 
 const store = createStore(
 	combineReducers({
 		balanceReducer,
 		loanReducer,
-	})
+	}),
+	applyMiddleware(thunk)
 );
 
 ReactDOM.render(
